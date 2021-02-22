@@ -38,7 +38,7 @@
   }
   .coin-list{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 10% 20% 20% 20% 30%;
     padding: 10px;
     align-items: center;
     background-color: #2B2928;
@@ -62,7 +62,7 @@
     text-decoration: underline;
   }
 
-  @media screen and (max-width : 500px){
+  @media screen and (max-width : 550px){
 
     .search-input{
       width: 15rem;
