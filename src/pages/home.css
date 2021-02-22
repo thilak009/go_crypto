@@ -31,14 +31,15 @@
     overflow-y: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    display: grid;
   }
   .coin-container::-webkit-scrollbar{
     display: none;
   }
   .coin-list{
     display: grid;
+    grid-template-columns: auto auto auto auto auto;
     padding: 10px;
-    grid-template-columns: 10% 20% 20% 25% 25%;
     align-items: center;
     background-color: #2B2928;
     color: white;
@@ -59,4 +60,19 @@
   }
   .coin-link > h3:hover{
     text-decoration: underline;
+  }
+
+  @media screen and (max-width : 500px){
+
+    .search-input{
+      width: 15rem;
+    }
+
+    .coin-container{
+      overflow-x: auto;
+    }
+    .coin-list{
+      grid-template-columns: auto;
+    }
+
   }

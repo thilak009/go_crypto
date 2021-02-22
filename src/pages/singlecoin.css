@@ -17,7 +17,7 @@ a{
 .coin-card{
     display: grid;
     align-items: center;
-    grid-template-columns: 45% 60%;
+    grid-template-columns: 45% 55%;
     background-color: #141315;
     margin: 20px auto;
     border: 0.1rem solid grey;
@@ -36,15 +36,26 @@ a{
 @media screen and (min-width : 650px){
 
     .coin-card{
-        width: 40rem;
+        width: 50rem;
     }
 
+}
+@media screen and (max-width : 500px){
+
+    .coin-card{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+        width: auto;
+    }
+    .coin-data{
+        border: none;
+    }
 }
 @media screen and (max-width : 600px){
 
     .coin-card > img{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     .coin-data{
         padding-left: 1rem;
