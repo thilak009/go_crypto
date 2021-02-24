@@ -73,6 +73,7 @@
     }
     .coin-list{
       grid-template-columns: auto;
+      grid-gap: 7px;
     }
 
   }

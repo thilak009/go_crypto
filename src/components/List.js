@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import {ImArrowUp,ImArrowDown} from 'react-icons/im';
 import { Link } from 'react-router-dom';
 
 function List({id,name,image,price,market_cap,price_change}) {
+
 
     return (
         <div className="coin-list">
